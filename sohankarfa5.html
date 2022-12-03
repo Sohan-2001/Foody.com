@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<title>Foody.eat</title>
+<head>
+<link rel="stylesheet" href="sohan007.css">
+</head>
+<style>
+input[type=submit]{
+padding: 5px 5px;
+border-radius: 20px;
+background-color: #FEFCD7;;
+color: blue;
+font-weight: 600;
+}
+input[type=text1]{
+padding: 5px 5px;
+border-radius: 20px;
+background-color: #ADD8E6;
+color: #5C4033;
+font-weight: 600;
+text-align: center;
+width: 500px;
+height: 40px;
+font-size: 25px;
+font-family: Arial;
+}
+input[type=text]:hover{
+padding: 3px 3px;
+border-radius: 10px;
+background-color: white;
+color: #5C4033;
+font-weight: 600;
+}
+input[type=text]{
+padding: 5px 5px;
+border-radius: 20px;
+background-color: #ADD8E6;
+color: #5C4033;
+font-weight: 600;
+text-align: center;
+width: 1150px;
+height: 250px;
+font-size: 25px;
+font-family: Arial;
+}
+input[type=text1]:hover{
+padding: 3px 3px;
+border-radius: 10px;
+background-color: white;
+color: #5C4033;
+font-weight: 600;
+}
+input[type=submit]:hover{
+padding: 3px 3px;
+border-radius: 10px;
+background-color: red;
+color: blue;
+}
+form{
+color: yellow;
+font-weight: 600;
+font-family: Arial;
+padding: 10px 10px;
+border-radius: 20px;
+text-align: center;
+font-size: 25px;
+}
+.fb5{
+background-color: rgb(63,0,15,0.5);
+height: 500px;
+width: 1500px;
+padding: 10px 10px;
+border-radius: 20px;
+}
+.fb2{
+position: fixed;
+top: 230px; 
+left:180px;
+text-align: center;
+
+}
+.fb3{
+position: fixed;
+top: 230px; 
+right:180px;
+text-align: center;
+}
+.fb4{
+position: fixed;
+top: 360px; 
+left: 200px;
+}
+.buttonfb{
+position: fixed;
+top: 685px; 
+left: 735px; 
+}
+
+</style>
+<body>
+<h1 style="font-family:Abadi;"><font size="6" color="white"></font><br>
+<font size="4" color="white"><br>
+</font></h1>
+<div class="Heading-container Heading-display-top box Heading-xlarge">
+<button onclick="document.location='file:///D:/sohankarfa.html'" class="button"><b>HOME</b></button>
+<button onclick="document.location='file:///D:/sohankarfa2.html'" class="button"><b>DISHES</b></button>
+<button onclick="document.location='file:///D:/sohankarfa1.html'" class="button"><b>TIMING</b></button>
+<button onclick="document.location='file:///D:/sohankarfa4.html'" class="button"><b>HEALTH-TIPS</b></button>
+<button onclick="document.location='file:///D:/sohankarfa3.html'" class="button"><b>ADDRESS</b></button>
+  </div>
+  <script>
+function fb() {
+  let x = document.forms["myform"]["fname"].value;
+  if (x == "") {
+    alert("Feedback must be filled out");
+    return false;
+  }
+  else{
+  alert("Thanks for your feedback");
+    return true;
+	}
+}
+</script>
+<div class="fb5">
+<form name="myform"  method="post" onsubmit="return fb()">
+<div class="fb2">
+Enter Name (optional) <br><br><input type="text1"  placeholder="Type Here">
+</div>
+<div class="fb3">
+Enter e-mail (optional) <br><br><input type="text1" placeholder="Type Here">
+</div>
+<div class="fb4">
+Enter Feedback <br><br><input name="fname"  type="text" placeholder="Type Here" width="700px" required></div>
+<input type="submit" value="SUBMIT"  onclick="fb()">
+</div>
+</form>
+</body>
+</html>
+  
